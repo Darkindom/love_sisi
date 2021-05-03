@@ -1,15 +1,18 @@
 @charset "UTF-8";
 
 .wrapper {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 40px 0;
 }
 .title {
   font-size: 2em;
   // font-family: 'sweet';
   font-family: 'hand-write';
+  margin-bottom: 40px;
 }
 .image {
   width: 100%;

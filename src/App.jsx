@@ -11,6 +11,7 @@ import XiZang from './pages/Travel/XiZang'
 import Disney from './pages/Travel/Disney'
 import XinJiang from './pages/Travel/XinJiang'
 import Beijing from './pages/Travel/Beijing'
+import Future from './pages/Travel/Future'
 
 import style from './style.module.scss'
 import cn from 'classnames'
@@ -53,6 +54,12 @@ function App () {
         <SwiperSlide className={style.swiperItem}>
           <div className={style.swiperCont}>
             <Beijing />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className={style.swiperItem}>
+          <div className={style.swiperCont}>
+            <Future />
           </div>
         </SwiperSlide>
       </Swiper>
