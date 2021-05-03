@@ -145,8 +145,6 @@ class FlipClock extends React.Component {
       daysShuffle
     } = this.state
 
-    console.log(hours, minutes, seconds, days)
-
     return (
       <div className={style.flipClock}>
         <div className={style.flipItem}>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -17,8 +16,6 @@ import style from './style.module.scss'
 import cn from 'classnames'
 
 function App () {
-  const [count, setCount] = useState(0)
-
   return (
     <div className='App'>
       <Swiper className={style.swipers} direction='vertical'>
