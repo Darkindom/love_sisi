@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.name {
+  font-size: 3em;
+  font-family: 'hand-write';
+}
+.title {
+  font-size: 4em;
+  // font-family: 'sweet';
+  font-family: 'hand-write';
+}
+
+.wordsCloud {
+  width: 100%;
+  margin-bottom: 20px;
+}

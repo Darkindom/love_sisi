@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* body {
+  display: flex;
+  background: #f59b9b;
+} */
+
+/* .swiper-slide {
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter {
+  position: relative;
+  background: transparent;
+  height: 0px;
+  width: 0px;
+  border-top: 50px solid transparent;
+  border-bottom: 90px solid #7CC0C8;
+  border-left: 120px solid #95DAE2;
+  border-right: 120px solid #9BDEE6;
+  border-radius: 10px;
+}
+
+.letter:before {
+  z-index: -2;
+  content: '';
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  background: #CCE3E6;
+  border-radius: 10px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  left: -80px;
+  top: -10px;
+}
+
+.letter:after {
+  font-family: 'Roboto Condensed', sans-serif;
+  z-index: -1;
+  content: 'To 谢思';
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #866FFF;
+  position: absolute;
+  height: 120px;
+  width: 180px;
+  border-radius: 10px;
+  background: white;
+  left: -90px;
+  animation: pop 1500ms infinite ease-in-out;
+}
+
+@keyframes pop {
+  0% {
+    top: -120px;
+  }
+
+  40% {
+    top: -120px;
+    transform: rotate(0deg);
+  }
+
+  70% {
+    top: -60px;
+    transform: rotate(6deg);
+  }
+
+  100% {
+    top: -120px;
+  }
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+}
+.title {
+  font-size: 2em;
+  // font-family: 'sweet';
+  font-family: 'hand-write';
+}
+.image {
+  width: 100%;
+  height: auto;
+}
