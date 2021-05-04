@@ -7,11 +7,15 @@ import 'swiper/swiper.scss'
 import FirstPage from './pages/FirstPage'
 import SecondPage from './pages/SecondPage'
 import TogetherDays from './pages/TogetherDays'
+
+import Path from './pages/Path'
 import XiZang from './pages/Travel/XiZang'
 import Disney from './pages/Travel/Disney'
 import XinJiang from './pages/Travel/XinJiang'
 import Beijing from './pages/Travel/Beijing'
-import Future from './pages/Travel/Future'
+import Love from './pages/Travel/Love'
+// import Future from './pages/Travel/Future'
+import LoveFooter from './images/love_footer.png'
 
 import style from './style.module.scss'
 import cn from 'classnames'
@@ -35,6 +39,7 @@ function App () {
             <TogetherDays />
           </div>
         </SwiperSlide>
+
         {/* Travel */}
         <SwiperSlide className={style.swiperItem}>
           <div className={style.swiperCont}>
@@ -59,10 +64,26 @@ function App () {
 
         <SwiperSlide className={style.swiperItem}>
           <div className={style.swiperCont}>
-            <Future />
+            <Path />
           </div>
         </SwiperSlide>
+
+        <SwiperSlide className={style.swiperItem}>
+          <div className={style.swiperCont}>
+            <Love />
+          </div>
+        </SwiperSlide>
+
+        {/* <SwiperSlide className={style.swiperItem}>
+          <div className={style.swiperCont}>
+            <Future />
+          </div>
+        </SwiperSlide> */}
       </Swiper>
+
+      <div className={style.footerImg}>
+        <img src={LoveFooter} />
+      </div>
     </div>
   )
 }

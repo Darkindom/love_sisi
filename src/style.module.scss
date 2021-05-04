@@ -13,3 +13,22 @@
 .second {
   padding: 10px 0;
 }
+.footerImg {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.5;
+  z-index: 999;
+  &::after {
+    content: '思思';
+    color: #ed5a65;
+    font-size: 18px;
+    font-family: 'sweet';
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-40px, -25px);
+  }
+} 

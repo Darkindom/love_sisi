@@ -5,9 +5,10 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   height: 100%;
+  padding-top: 50px;
 }
 
 header {
