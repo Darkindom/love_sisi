@@ -64,21 +64,15 @@ function App () {
 
         <SwiperSlide className={style.swiperItem}>
           <div className={style.swiperCont}>
-            <Path />
+            <Love />
           </div>
         </SwiperSlide>
 
         <SwiperSlide className={style.swiperItem}>
           <div className={style.swiperCont}>
-            <Love />
+            <Path />
           </div>
         </SwiperSlide>
-
-        {/* <SwiperSlide className={style.swiperItem}>
-          <div className={style.swiperCont}>
-            <Future />
-          </div>
-        </SwiperSlide> */}
       </Swiper>
 
       <div className={style.footerImg}>

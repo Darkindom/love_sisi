@@ -6,7 +6,7 @@ import Beach from '../../images/beach.jpg'
 const Page = () => (
   <div className={style.wrapper}>
     <div className={style.title}>爱，不是一件浪漫的事</div>
-    <div className={style.title}>爱你才是</div>
+    <div className={style.title}>爱你才是！</div>
     <img className={style.image} src={BiXin} />
     <img className={style.image} src={Beach} />
   </div>

@@ -20,15 +20,15 @@
   opacity: 0.5;
   z-index: 999;
   &::after {
-    content: '思思';
+    content: 'By Dk';
     color: #ed5a65;
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'sweet';
     width: 50px;
     height: 20px;
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-40px, -25px);
+    transform: translate(-40px, -22px);
   }
 } 

@@ -50,3 +50,11 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+/* .swiper-pagination {
+  opacity: 0.2;
+}
+
+.swiper-pagination span {
+  --swiper-theme-color: red
+} */
