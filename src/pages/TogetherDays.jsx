@@ -184,7 +184,9 @@ const TogetherDays = () => (
   <div className={style.wrapper}>
     <div className={style.title}>在一起</div>
     <FlipClock targetTime={dayjs('2020/06/20 23:00:00')} />
-    <div className={style.content}>遇见你，三生有幸</div>
+    <div className={style.content}>天底下最好的事</div>
+    <div className={style.content}>不过就三个字</div>
+    <div className={style.content}>遇见你</div>
   </div>
 )
 export default TogetherDays

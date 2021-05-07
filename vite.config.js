@@ -9,4 +9,8 @@ export default defineConfig({
     outDir: 'docs',
     brotliSize: false,
   },
+  server: {
+    // host: `local.config.dp-admin.${ENV}.shopee.io`,
+    port: 1314,
+  }
 })

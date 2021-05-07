@@ -7,6 +7,7 @@ import 'swiper/swiper.scss'
 import FirstPage from './pages/FirstPage'
 import SecondPage from './pages/SecondPage'
 import TogetherDays from './pages/TogetherDays'
+import FourthPage from './pages/FourthPage'
 
 import Path from './pages/Path'
 import XiZang from './pages/Travel/XiZang'
@@ -37,6 +38,12 @@ function App () {
         <SwiperSlide className={style.swiperItem}>
           <div className={style.swiperCont}>
             <TogetherDays />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className={style.swiperItem}>
+          <div className={style.swiperCont}>
+            <FourthPage />
           </div>
         </SwiperSlide>
 
