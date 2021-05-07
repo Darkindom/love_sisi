@@ -31,4 +31,9 @@
     left: 50%;
     transform: translate(-40px, -22px);
   }
-} 
+}
+.isLast {
+  &::after {
+    content: '爱你';
+  }
+}

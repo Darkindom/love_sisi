@@ -7,7 +7,7 @@ import 'swiper/swiper.scss'
 import FirstPage from './pages/FirstPage'
 import SecondPage from './pages/SecondPage'
 import TogetherDays from './pages/TogetherDays'
-import FourthPage from './pages/FourthPage'
+import ThirdPage from './pages/ThirdPage'
 
 import Path from './pages/Path'
 import XiZang from './pages/Travel/XiZang'
@@ -22,9 +22,17 @@ import style from './style.module.scss'
 import cn from 'classnames'
 
 function App () {
+  const [isLast, setIsLast] = useState(false)
+  const onSlideChange = val => {
+    setIsLast(val.activeIndex === 9)
+  }
   return (
     <div className='App'>
-      <Swiper className={style.swipers} direction='vertical'>
+      <Swiper
+        className={style.swipers}
+        direction='vertical'
+        onSlideChange={onSlideChange}
+      >
         <SwiperSlide className={style.swiperItem}>
           <div className={style.swiperCont}>
             <FirstPage />
@@ -35,15 +43,16 @@ function App () {
             <SecondPage />
           </div>
         </SwiperSlide>
+
         <SwiperSlide className={style.swiperItem}>
           <div className={style.swiperCont}>
-            <TogetherDays />
+            <ThirdPage />
           </div>
         </SwiperSlide>
 
         <SwiperSlide className={style.swiperItem}>
           <div className={style.swiperCont}>
-            <FourthPage />
+            <TogetherDays />
           </div>
         </SwiperSlide>
 
@@ -82,7 +91,11 @@ function App () {
         </SwiperSlide>
       </Swiper>
 
-      <div className={style.footerImg}>
+      <div
+        className={cn(style.footerImg, {
+          [style.isLast]: isLast
+        })}
+      >
         <img src={LoveFooter} />
       </div>
     </div>

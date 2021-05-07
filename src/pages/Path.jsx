@@ -6,7 +6,7 @@ const Page = () => (
   <div className={style.wrapper}>
     <div className={style.titleWrapper}>
       <div className={style.title}>未来的路很长</div>
-      <div className={style.title}>我想和你一起慢慢走下去</div>
+      <div className={style.title}>我想和你一起慢慢走</div>
     </div>
 
     <div className={style.text}>相遇</div>

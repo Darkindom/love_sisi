@@ -1,8 +1,8 @@
 import React from 'react'
 import BirthdayCake from '../images/birthday_cake.png'
-import style from './FourthPage.module.scss'
+import style from './ThirdPage.module.scss'
 
-const FourthPage = () => (
+const ThirdPage = () => (
   <div className={style.wrapper}>
     <img className={style.birthdayCake} src={BirthdayCake} />
     <div className={style.title}>
@@ -15,4 +15,4 @@ const FourthPage = () => (
     </div>
   </div>
 )
-export default FourthPage
+export default ThirdPage
